@@ -1,0 +1,112 @@
+:root{
+    /* ### Primary */
+    
+    --brightOrange: #e38826;
+    --darkCyan: #006970;
+    --veryDarkCyan: #004241;
+    
+    /* ### Neutral */
+
+    /* (paragraphs) */
+    --transparentWhite : #ffffffbf;
+    /* (background, headings, buttons) */
+    --veryLightGray : #f2f2f2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: 5rem auto;
+}
+.seccionSedans{
+    background-color: var(--brightOrange);
+    border-radius: 5px 5px 0 0;
+}
+.seccionLuxury{
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 5px 5px;
+}
+.seccion__informacion{
+    color: var(--transparentWhite);
+    margin: 2rem 0 8rem 0;
+}
+@media (min-width: 900px) {
+    .contenedor{
+        width: 60rem;
+        margin: auto;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        height:calc(40rem - 1px)
+}
+    .contenedor__seccion{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+    .seccionLuxury{
+        background-color: var(--veryDarkCyan);
+        border-radius: 0 5px 5px 0;
+}
+    .seccionSedans{
+        background-color: var(--brightOrange);
+        border-radius: 5px 0 0 5px;
+}
+.seccion__informacion{
+    margin: 4rem 0 8rem 0;
+}
+.attribution{
+    bottom: 0.5rem;
+    position: absolute;
+    width: 100%;
+}
+}
+
+.seccionGlobal{
+    padding: 4rem 3.5rem;
+}
+.seccion__titulo{
+    color: var(--veryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.seccion__boton{
+    text-decoration: none;
+    background-color: var(--veryLightGray);
+    padding: 1rem 2rem;
+    border-radius:50px;
+    margin-bottom: 5rem;
+}
+
+.seccion__boton--colorSedans{
+    color: var(--brightOrange);
+}
+.seccion__boton--colorSuvs{
+    color: var(--darkCyan);
+}
+.seccion__boton--colorLuxury{
+    color: var(--veryDarkCyan);
+}
+.seccionSuvs{
+    background-color: var(--darkCyan);
+}
+
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center;
+    padding: .5rem;
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
